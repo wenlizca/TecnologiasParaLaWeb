@@ -1,0 +1,51 @@
+<!-- 
+		Alumna: Wendy Lizeth Carrillo Ceballos.
+		Curso: Tecnologías para la Web.
+		Archivo: Practica1  - Página de Ejemplo
+		Fecha: Marzo 08, 2021.
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Práctica 1</title>
+</head>
+<body>
+
+	<FONT FACE="arial">
+
+	<font size="4" COLOR="ff0000">
+		<B>PÁGINA DE EJEMPLO</B>
+	</font>
+
+	<br><br>
+	
+	<p ALIGN="center"><i>Esta convocatoria se encuentra publicada en la página <a href="www.ipn.mx">www.ipn.mx</a></i></p>
+	
+	<font size="3">
+		<p ALIGN="justify"><strong>Politécnico NAcional con fundamento en los artículos 3,4,12 y 14, fracciones I y XIX de su Ley Orgánica; 83 de su Reglamento Interno; 16, 31, fracción XIV; 44, fracciones IV y XI, y 47, fracciones II, III, V, VIII y IX de su Reglamento Orgánico; así como 6,8,9,12,13,14 y 49 de su reglamento General de Estudios.</strong></p><br>
+	</font>
+
+	<p align="center"><b>CONVOCA</b></center></p>
+
+	<p ALIGN="justify">A los aspirantes interesados en participar en el proceso de asmisión al ciclo escolar 2021 - 2022 para el <b>nivel superior en la modalidad escolarizada</b>, que se realizará del <B>26 de febrero al 9 de agosto de 2021</B>, conforme a las siguientes:</p><br>
+
+	<FONT COLOR="5E2129">
+		<p align="center"><b>BASES</b></p><br>
+	</FONT>
+
+	<p ALIGN="justify"><strong>Es importante precisar que las etapas, procedimientos y fechas de esta Convocatoria estarán sujetas a las intrucciones y cambios que las autoridades sanitarias competentes establezcan.</strong></p><br>
+
+	<FONT COLOR="5E2129">
+		<p align="center"><b>Primera: <br>Obtención de Solicitud de Registro</b></p>
+	</FONT>
+
+	<p ALIGN="justify">A partir del <strong>26 de febrero y hasta el 26 de marzo de 2021</strong>, el aspirante deberá llenar la Solicitud de Registro con los datos requeridos. En caso de que el aspinate no registre sus datos correctos, el Instituto se deslinda de notificarlo de cualquier resultado.</p>
+
+	<p align="justify">Al momento de llenar la <b>Solicitud de Registro, el aspirante deberá contar con una dirección de correo electrónico válida.</b></p>
+
+	<p>El periodo de registro en línea será conforme a las siguientes fechas:</p>
+
+	</FONT>
+</body>
+</html>
