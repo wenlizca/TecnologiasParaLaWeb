@@ -1,0 +1,29 @@
+<!-- 
+		Alumna: Wendy Lizeth Carrillo Ceballos.
+		Curso: Tecnologías para la Web.
+		Archivo: Practica2 HTML-XHTML
+		Fecha: Marzo 17, 2021.
+		Nomenclatura: 2INV_234.html
+ -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>HTML o XHTML</title>
+	<!--<meta charset="utf-8">-->
+</head>
+<body>
+
+
+		<h1>Hola</h1>
+
+		<p>Esta página es una página sencilla para un ejemplo, y será para aplicar las 10 reglas del XHTML.</p>
+
+		<p> El HTML es el código más conocido que se utiliza para estructurar una página web.</p>
+
+		<p><b>Atte. Wendy</b></p>
+	
+</body>
+</html>
