@@ -1,0 +1,154 @@
+<!-- 
+		Alumna: Wendy Lizeth Carrillo Ceballos.
+		Curso: Tecnologías para la Web.
+		Archivo: ejercicio4_WLCC
+		Fecha: Marzo 29, 2021.
+ -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Ejercicio 4</title>
+	<meta charset="utf-8">
+	<!-- FORMULARIOS (Form) en HTML-->
+</head>
+<body bgcolor="pink">
+	<!-- ENCABEZADO -------------------------------------------------------------------------------------- -->
+	 <header>
+        <!--Menus, Logos, Redes sociales, entre otros-->
+        
+        <nav>
+            <ul>
+                <li><a href="../Departamental1/index.html">Inicio</a></li>
+                <li>Páginas
+                    <ul>
+                      	<li><a href="../Departamental1/2EJE1_WLCC.html">Ejercicio 1</a></li>
+						<li><a href="../Departamental1/ejercicio2_WLCC.html">Ejercicio 2</a></li>
+						<li><a href="../Departamental1/ejercicio3_WLCC.html">Ejercicio 3</a></li>
+						<li><a href="../Departamental1/ejercicio4_WLCC.html">Ejercicio 4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO ----------------------------------------------------------------------------------- -->
+
+
+    <main>
+    	<!--<form action="registroCita.php" method="GET">-->
+
+    	<font face="corbel">
+    	<form>
+    		<table align="center">
+    			<caption><h2>Servicio de Uñas</h2></caption>
+
+    			<hr>
+
+    			<tr>
+    				<td>Nombre Completo:</td>
+    				<td><input type="text" name="nombre" size="50"></td>
+    			</tr>
+
+    			<tr>
+    				<td>Teléfono:</td>
+    				<td><input type="tel" name="celular" size="13"></td>
+    			</tr>
+
+    			<tr>
+    				<td>Fecha de cita:</td>
+    				<td><input type="date" name="cita"></td>
+    			</tr>
+
+    			<tr>
+    				<td>Tipo de uña natural:</td>
+    				<td>
+    					<select name="select">
+						  <option value="value1">Almendra</option>
+						  <option value="value2">Ovalada</option>
+						  <option value="value3">Redonda</option>
+						  <option value="value3">Cuadrada</option>
+						  <option value="value3">Asimétrica</option>
+						  <option value="value4">Moridida</option>
+						</select>
+    				</td>
+    			</tr>
+
+    			<tr>
+    				<td>Condiciones de la uña:</td>
+    				<td><textarea rows="5" cols="40" align="center">Describe como recibes la uña, si tiene hongo, deformación, está delgada, etc.</textarea></td>
+    			</tr>
+
+    			<tr>
+    				<td rowspan="9">Tipo de servicio(s) requerido(s):</td>
+    				<td><input type="checkbox" name="valor" value="Escultura">Manicura</td>
+    			</tr>
+    					
+    				
+					<tr>
+						<td><input type="checkbox" name="valor" value="Escultura">Pedicura</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="valor" value="Escultura">Esmaltado semipermanente Manos</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="valor" value="Escultura">Esmaltado semipermanente Pies</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="valor" value="Escultura">Uña con Tip</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="valor" value="Escultura">Uña Escultural con Acrilico Sencilla</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="valor" value="Escultura">Uña Escultural con Acrilico y diseño 3D</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="valor" value="Escultura">Uña Escultural con Acrilico y mano alzada</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="valor" value="Escultura">Uña Escultural con PolyGel</td>
+					</tr>
+    				</td>
+    				</tr>
+
+    			<tr>
+    				<td>Número (Largo) de uña:</td>
+    				<td>
+    					<input type="radio" value="1" name="natural" id="largoNatural"> Natural
+    					<input type="radio" value="1" name="uno" id="largoUno"> Uno
+    					<input type="radio" value="1" name="uno" id="largoDos"> Dos 
+    					<input type="radio" value="1" name="uno" id="largoTres"> Tres
+    					<input type="radio" value="1" name="uno" id="largoCuatro"> Cuatro 
+    					<input type="radio" value="1" name="uno" id="largoCinco"> Cinco 
+    					<input type="radio" value="1" name="uno" id="largoSeis"> Seis
+    					<input type="radio" value="1" name="uno" id="largoSiete"> Siete
+    					<input type="radio" value="1" name="uno" id="largoOcho"> Ocho
+    					<input type="radio" value="1" name="uno" id="largoNueve">Nueve 
+
+    				</td>
+    			</tr>
+
+    			<tr>
+    				<td>Precio final:</td>
+    				<td><input type="text" name="Costo" size="10"></td>
+    			</tr>
+
+
+    			<tr align="center">
+    				<td><input type="submit" name="ticket" value="Ver Ticket de Cita"></td>
+    				<td><input type="reset" name="clear" value="Limpiar"></td>
+    			</tr>
+
+    		</table>
+    	</form>
+    	</font>
+
+    	<br><br><br>
+
+    </main>
+
+</body>
+</html>
