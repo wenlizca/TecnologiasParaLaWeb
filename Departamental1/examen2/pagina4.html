@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Página 4</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+	<!-- ENCABEZADO -------------------------------------------------------------------------------------- -->
+	 <header>
+        <!--Menus, Logos, Redes sociales, entre otros-->
+        
+        <nav>
+            <!--Rutas absoluta = Recursos fuera de mi sitio Web-->
+            <img src="https://static.wixstatic.com/media/09952d_4364accd20a44c67ba6647045022e3f8.png" width="50px" height="80px">    
+            <!--Ruta relativa-->
+            <img src="../examen2/images/LogoUPIIZ.png" width="80px">
+
+            <ul>
+                <li><a href="../examen2/examen2_WLCC.html">Inicio</a></li>
+                <li>Páginas
+                    <ul>
+                       <li><a href="../examen2/pagina1.html">Página 1 </a></li>
+				  		<li><a href="../examen2/pagina2.html">Página 2 </a></li>
+				  		<li><a href="../examen2/pagina3.html">Página 3 </a></li>
+				  		<li><a href="../examen2/pagina4.html">Página 4 </a></li>
+                    </ul>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO -------------------------------------------------------------------------------------- -->
+
+
+    <section>
+    	<form border="1">
+    		<p ><h1 align="center"> CATÁLOGO DE ARTE</h1></p>
+
+    		<p><b>Introduce los términos de búsqueda:</b></p>
+
+    		<table align="center">
+    			<tr>
+    				<th>OBRA</th>
+    				<th>TIPO</th>
+    				<th>DISPONIBILIDAD</th>
+    				<th>ESTILO</th>
+    			</tr>
+
+    			
+    			<tr>
+    				<!-- OBRA ------------------------------ -->
+    				<td>Titulo <input type="text" name="title" size="15"></td>
+
+    				<!-- TIPO ------------------------------ -->
+    				<td><input type="checkbox" name="valor" value="Escultura">Escultura</td>
+
+    				<!-- DISPONIBILIDAD -------------------- -->
+    				<td><input type="radio" name="publico" value="False"> Museo / Acceso Público</td>
+
+    				<!-- ESTILO ---------------------------- -->
+    				<td>
+    					<select name="select">
+						  <option value="value1" selected>Clasico</option>
+						  <option value="value2" >Moderno</option>
+						  <option value="value3">Renacimiento</option>
+						</select>
+    				</td>
+    			</tr>
+
+    			<tr>
+    				<!--OBRA ------------------------------ -->
+    				<td>Autor <input type="text" name="autor" size="10"></td>
+					
+					<!-- TIPO ------------------------------ -->
+    				 <td><input type="checkbox" name="valor" value="Arquitectura">Arquitectura</td>
+
+    				 <!-- DISPONIBILIDAD -------------------- -->
+    				 <td><input type="radio" name="privado" value="False"> Colección Privada</td>
+
+    			</tr>
+
+    			<tr>
+    				<!-- TIPO ------------------------------ -->
+    				<td>
+    					<td><input type="checkbox" name="valor" value="Pintura">Pintura</td>
+    				</td>
+    			</tr>
+
+    		</table>	
+
+	    	<p><b>Haganos saber sus sugerencias:</b>
+	    	<textarea rows="5" cols="40" align="center"> Me gustaría indicar que... </textarea></p>
+
+	    	<p align="center"> <input type="submit" value="Buscar"> </p>
+
+    	</form>
+    </section>
+
+
+</head>
+<body>
+
+</body>
+</html>
