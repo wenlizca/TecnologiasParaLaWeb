@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+    
+    <head>
+        <title>Constancias</title>
+        <!--Lenguaje ESPAÑOL con caracteres especiales-->
+        <meta charset="utf-8">
+        <!-- Bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+        <link href="vendors/easypiechart/jquery.easy-pie-chart.css" rel="stylesheet" media="screen">
+        <link href="assets/styles.css" rel="stylesheet" media="screen">
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Electivas</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right">
+                            <li class="dropdown">
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i> Wendy Carrillo <i class="caret"></i>
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a tabindex="-1" href="#">Perfil</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a tabindex="-1" href="login.html">Cerrar Sesión</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    
+                    <!-- MENU SUPERIOR .............................................................-->
+                    <!--
+                        <ul class="nav">
+                            <li class="active">
+                                <a href="#">Inicio</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Desglose de créditos <b class="caret"></b>
+
+                                </a>
+                                <ul class="dropdown-menu" id="menu1">
+                                    <li>
+                                        <a href="#">Tools <i class="icon-arrow-right"></i>
+
+                                        </a>
+                                        <ul class="dropdown-menu sub-menu">
+                                            <li>
+                                                <a href="#">Reports</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Logs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Errors</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">SEO Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Other Link</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">Other Link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Other Link</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Content <i class="caret"></i>
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a tabindex="-1" href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="#">News</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="#">Custom Pages</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="#">Calendar</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a tabindex="-1" href="#">FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Users <i class="caret"></i>
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a tabindex="-1" href="#">User List</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="#">Search</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="#">Permissions</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    FIN MENU SUPERIOR ....................................................-->
+                    </div>
+                    <!--/.nav-collapse--> 
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3" id="sidebar">
+                    <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
+                        <li class="active">
+                            <a href="index.html"><i class="icon-chevron-right"></i> Inicio</a>
+                        </li>
+                        <li>
+                            <a href="calendar.html"><i class="icon-chevron-right"></i> Desglose de créditos</a>
+                        </li>
+                        <li>
+                            <a href="stats.html"><i class="icon-chevron-right"></i> Alta de constancia</a>
+                        </li>
+                        <li>
+                            <a href="form.html"><i class="icon-chevron-right"></i> Salir</a>
+                        </li>
+                        <!-- OPCIONES EXTRAS DEL MENÚ LATERAL --------------------------------------->
+                        <!--
+                        <li>
+                            <a href="tables.html"><i class="icon-chevron-right"></i> Tables</a>
+                        </li>
+                        <li>
+                            <a href="buttons.html"><i class="icon-chevron-right"></i> Buttons & Icons</a>
+                        </li>
+                        <li>
+                            <a href="editors.html"><i class="icon-chevron-right"></i> WYSIWYG Editors</a>
+                        </li>
+                        <li>
+                            <a href="interface.html"><i class="icon-chevron-right"></i> UI & Interface</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="badge badge-success pull-right">731</span> Orders</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="badge badge-success pull-right">812</span> Invoices</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="badge badge-info pull-right">27</span> Clients</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="badge badge-info pull-right">1,234</span> Users</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="badge badge-info pull-right">2,221</span> Messages</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="badge badge-info pull-right">11</span> Reports</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="badge badge-important pull-right">83</span> Errors</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="badge badge-warning pull-right">4,231</span> Logs</a>
+                        </li>
+                        -->
+<!--<ul>
+                </div>-->
+                
+                <!--/span-->
+                <!--<div class="span9" id="content">
+                    <div class="row-fluid">-->
+                        <!-- CUADRO DE DIALOGO EMERGENTE color Verde -->
+                        <!--
+                        <div class="alert alert-success">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <h4>Success</h4>
+                        	The operation completed successfully</div>
+                            -->
+
+                            <!-- ESPACIO DE UBICACIÓN DENTRO DEL SITIO -->
+                            <!--
+                        	<div class="navbar">
+                            	<div class="navbar-inner">
+	                                <ul class="breadcrumb">
+	                                    <i class="icon-chevron-left hide-sidebar"><a href='#' title="Hide Sidebar" rel='tooltip'>&nbsp;</a></i>
+	                                    <i class="icon-chevron-right show-sidebar" style="display:none;"><a href='#' title="Show Sidebar" rel='tooltip'>&nbsp;</a></i>
+	                                    <li>
+	                                        <a href="#">Dashboard</a> <span class="divider">/</span>	
+	                                    </li>
+	                                    <li>
+	                                        <a href="#">Settings</a> <span class="divider">/</span>	
+	                                    </li>
+	                                    <li class="active">Tools</li>
+	                                </ul>
+                            	</div>
+                        	</div>
+                            -->
+                    	<!--</div>-->
+                    
+                    <!-- ESPACIO DE LAS GRAFICAS CIRCULARES de PORCIENTOS ............................ -->
+                        <!--<div class="row-fluid">-->
+                        <!-- block -->
+                        <!--
+                        <div class="block">
+                            <div class="navbar navbar-inner block-header">
+                                <div class="muted pull-left">Statistics</div>
+                                <div class="pull-right"><span class="badge badge-warning">View More</span>
+
+                                </div>
+                            </div>
+                            <div class="block-content collapse in">
+                                <div class="span3">
+                                    <div class="chart" data-percent="73">73%</div>
+                                    <div class="chart-bottom-heading"><span class="label label-info">Visitors</span>
+
+                                    </div>
+                                </div>
+                                <div class="span3">
+                                    <div class="chart" data-percent="53">53%</div>
+                                    <div class="chart-bottom-heading"><span class="label label-info">Page Views</span>
+
+                                    </div>
+                                </div>
+                                <div class="span3">
+                                    <div class="chart" data-percent="83">83%</div>
+                                    <div class="chart-bottom-heading"><span class="label label-info">Users</span>
+
+                                    </div>
+                                </div>
+                                <div class="span3">
+                                    <div class="chart" data-percent="13">13%</div>
+                                    <div class="chart-bottom-heading"><span class="label label-info">Orders</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                        <!-- /block -->
+                    </div>
+
+                    <!-- TABLAS DE CONTENIDO ..................................................... -->
+                    <!-- PRIMER TABLA DE CONTENIDO ............................................... -->
+                   </div>
+
+                   <div>
+
+                        <div class="row-fluid">
+                        <!-- block -->
+                        <div class="block">
+                            <div class="navbar navbar-inner block-header">
+                                <div class="muted pull-left">
+                                    <h3>Alta de constancias</h3>
+                                </div>
+                                <!-- Botón para NUEVA CONSTANCIA -->
+                                    <div class="pull-right"> <!-- Alineo a la derecha -->
+                                        <div class="block-content collapse in">
+                                            <div class="span12">
+                                                
+                                                <a href="#myAlert" data-toggle="modal" class="btn btn-danger">Nueva Constancia</a>
+
+
+                                                <!-- CONTENIDO DEL MODAL "Nueva Constancia" -->
+                                                <div id="myAlert" class="modal hide">
+                                                    <div class="modal-header">
+                                                        <button data-dismiss="modal" class="close" type="button">×</button>
+                                                        <h3>Subir Constancia</h3>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <!-- CONTENIDO FORMULARIO -->
+
+                                                        <!-- validation -->
+                                                        <div class="row-fluid">
+                                                             <!-- block -->
+                                                            <!--<div class="block">
+                                                                <div class="block-content collapse in">-->
+                                                                    <!--<div class="span20">-->
+
+                                                                        <!-- BEGIN FORM
+                                                                        <form action="#" id="form_sample_1" class="form-horizontal">-->
+                                                                        <form action="#">
+                                                                            <fieldset>
+                                                                                <div class="alert alert-error hide">
+                                                                                    <button class="close" data-dismiss="alert"></button>
+                                                                                    Tienes errores o no has completado campos requeridos. Por favor revisa nuevamente.
+                                                                                </div>
+                                                                                <div class="alert alert-success hide">
+                                                                                    <button class="close" data-dismiss="alert"></button>
+                                                                                    Registro Exitoso!
+                                                                                </div>
+                                                                                <div class="control-group">
+                                                                                    <label class="control-label">Nombre de la actividad<span class="required">*</span></label>
+                                                                                    <div class="controls">
+                                                                                        <input type="text" name="name" data-required="1" class="span6 m-wrap"/>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="control-group">
+
+                                                                                    <label class="control-label">Fecha de inicio<span class="required">*</span></label>
+                                                                                    <div class="controls">
+                                                                                        <input name="text" type="date" class="span6 m-wrap"/>
+                                                                                    </div>
+
+                                                                                    <label class="control-label">Fecha de termino<span class="required">*</span></label>
+                                                                                    <div class="controls">
+                                                                                        <input name="text" type="date" class="span6 m-wrap"/>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--
+                                                                                <div class="control-group">
+                                                                                    <label class="control-label">Fecha de inicio<span class="required">*</span></label>
+                                                                                    <div class="controls">
+                                                                                        <input name="text" type="date" class="span6 m-wrap"/>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="control-group">
+                                                                                    <label class="control-label">Fecha de termino<span class="required">*</span></label>
+                                                                                    <div class="controls">
+                                                                                        <input name="text" type="date" class="span6 m-wrap"/>
+                                                                                    </div>
+                                                                                </div>
+                                                                                -->
+                                                                                 <div class="control-group">
+                                                                                    <label class="control-label">Horas<span class="required">*</span></label>
+                                                                                    <div class="controls">
+                                                                                        <input name="text" type="time" class="span6 m-wrap"/>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--<div class="control-group">
+                                                                                    <label class="control-label">URL<span class="required">*</span></label>
+                                                                                    <div class="controls">
+                                                                                        <input name="url" type="text" class="span6 m-wrap"/>
+                                                                                        <span class="help-block">e.g: http://www.demo.com or http://demo.com</span>
+                                                                                    </div>
+                                                                                </div>-->
+                                                                                <div class="control-group">
+                                                                                  <label class="control-label" for="fileInput">Archivo (solo una constancia y en .pdf)</label>
+                                                                                  <div class="controls">
+                                                                                    <div class="uploader" id="uniform-fileInput"><input class="input-file uniform_on" id="fileInput" type="file"><span class="filename" style="user-select: none;">s</span><span class="action" style="user-select: none;"></span></div>
+                                                                                  </div>
+                                                                                </div>
+
+
+                                                                                 <div class="control-group">
+                                                                                    <label class="control-label">Observaciones<span class="required">*</span></label>
+                                                                                    <div class="controls">
+                                                                                        <!--<input type="text" size="15" maxlength="30" name="name" data-required="1" class="span6 m-wrap"/>-->
+                                                                                        <textarea rows="5" cols="100" align="center"> Ingrese las observaciones que considere necesarias </textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                                
+                                                                            </fieldset>
+                                                                        </form>
+                                                                        <!-- END FORM-->
+                                                                    <!--</div>-->
+                                                                <!--</div>
+                                                            </div>-->
+                                                            <!-- /block -->
+                                                        </div>
+                                                        <!-- /validation -->
+
+                                                        <!-- -->
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a data-dismiss="modal" class="btn btn-primary" href="AltaConstancia.php">Guardar</a>
+
+                                                        <a data-dismiss="modal" class="btn" href="#">
+                                                        <button type="reset" >Cancelar</button> 
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <!-- FIN CONTENIDO DEL MODAL -->
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- FIN DE BOTÔN NUEVA CONSTANCIA -->
+
+                            </div>
+
+                        <!--------------------------------------------------------------------------------------------------------------->
+                            <div class="block-content collapse in">
+                                <div class="span12">
+                                    
+                                    <div id="example_wrapper" class="dataTables_wrapper form-inline" role="grid">
+                                        
+                                        <div class="row">
+
+                                            <!-- SELEECIONAR NUMERO DE REGISTROS -->
+                                            <div class="span6">
+                                                <div id="example_length" class="dataTables_length">
+                                                    <label>
+                                                        <select size="1" name="example_length" aria-controls="example">
+                                                            <option value="10" selected="selected">10</option>
+                                                            <option value="25">25</option>
+                                                            <option value="50">50</option><option value="100">100</option>
+                                                        </select> 
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- BUSCAR REGISTRO -->
+                                            <div class="span6">
+                                                <div class="dataTables_filter" id="example_filter">
+                                                        <input type="text" aria-controls="example">
+                                                        <button class="btn"><i class=" icon-search icon-white"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered dataTable" id="example" aria-describedby="example_info">
+                                        <thead>
+                                            <!-- ENCABEZADOS DE LA TABLA -->
+                                            <tr role="row">
+                                                <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 153px;">Nombre de la Actividad
+
+                                                </th>
+                                                <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 224px;">Fecha
+                                                </th>
+                                                <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 208px;">Horas
+                                                </th>
+                                                <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 131px;">Acciones
+
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        
+                                    <tbody role="alert" aria-live="polite" aria-relevant="all">
+                                         <!-- CONTENIDO DE LA TABLA -->
+                                        <tr class="gradeA odd">
+                                                <td class="  sorting_1">Curso de Android</td>
+                                                <td class=" ">23-12-2020</td>
+                                                <td class=" "> 20</td>
+                                                <td class="center ">
+                                                    <button class="btn btn-primary"><i class="icon-pencil icon-white"></i></button>
+                                                    <button class="btn btn-danger"><i class="icon-trash icon-white"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="gradeA even">
+                                                <td class="  sorting_1">Curso de React</td>
+                                                <td class=" ">30-04-2021</td>
+                                                <td class=" ">20</td>
+                                                <td class="center ">
+                                                    <button class="btn btn-primary"><i class="icon-pencil icon-white"></i></button>
+                                                    <button class="btn btn-danger"><i class="icon-trash icon-white"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="gradeA odd">
+                                                <td class="  sorting_1">Curso de Flutter</td>
+                                                <td class=" ">16-09-2020</td>
+                                                <td class=" ">30</td>
+                                                <td class="center ">
+                                                    <!-- VALIDADO ------------------------------------------------------------------- -->
+                                                    <span class="label label-success">Validada</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Curso de Read Native</td>
+                                                <td>16-09-2020</td>
+                                                <td>30</td>
+                                                <td>
+                                                     <!-- RECHAZADO ------------------------------------------------------------------- -->
+                                                    <a href="#myModal" data-toggle="modal" class="label label-important">Rechazada</a>
+                                                    <div id="myModal" class="modal hide">
+                                                        <div class="modal-header">
+                                                            <button data-dismiss="modal" class="close" type="button">×</button>
+                                                            <h3>Rechazada</h3>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>La constancia no especifica horas</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="row" >
+                                        <div class="span12">
+                                            <div class="dataTables_paginate paging_bootstrap pagination">
+                                                <ul>
+                                                    <li class="prev disabled"><a href="#">← Atrás</a></li>
+                                                    <li class="active"><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li><li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li><li><a href="#">5</a></li>
+                                                    <li class="next"><a href="#">Siguiente → </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                        <!-- /block -->
+                    </div>
+                        <!-- FIN SEGUNDA TABLA DE CONTENIOD -->
+                       
+                    </div>
+
+                   
+            </div>
+            <hr>
+           <!-- PIE DE PÁGINA-->
+           <!--
+           <footer>
+                <p>&copy; Vincent Gabriel 2013</p>
+            </footer> 
+            -->
+        </div>
+        <!--/.fluid-container-->
+
+        <!-- BOTON DE ALERTA PARA EL CUADRO DE DIALOGO EMERGENTE -->
+        <script src="vendors/jquery-1.9.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendors/jGrowl/jquery.jgrowl.js"></script>
+        <script src="assets/scripts.js"></script>
+
+        <script src="vendors/jquery-1.9.1.min.js"></script>
+        
+        <script src="vendors/easypiechart/jquery.easy-pie-chart.js"></script>
+        
+        <script>
+        $(function() {
+            // Easy pie charts
+            $('.chart').easyPieChart({animate: 1000});
+        });
+        </script>
+        <script>
+        $(function() {
+            $('.tooltip').tooltip();    
+            $('.tooltip-left').tooltip({ placement: 'left' });  
+            $('.tooltip-right').tooltip({ placement: 'right' });    
+            $('.tooltip-top').tooltip({ placement: 'top' });    
+            $('.tooltip-bottom').tooltip({ placement: 'bottom' });
+
+            $('.popover-left').popover({placement: 'left', trigger: 'hover'});
+            $('.popover-right').popover({placement: 'right', trigger: 'hover'});
+            $('.popover-top').popover({placement: 'top', trigger: 'hover'});
+            $('.popover-bottom').popover({placement: 'bottom', trigger: 'hover'});
+
+            $('.notification').click(function() {
+                var $id = $(this).attr('id');
+                switch($id) {
+                    case 'notification-sticky':
+                        $.jGrowl("Stick this!", { sticky: true });
+                    break;
+
+                    case 'notification-header':
+                        $.jGrowl("A message with a header", { header: 'Important' });
+                    break;
+
+                    default:
+                        $.jGrowl("Hello world!");
+                    break;
+                }
+            });
+        });
+        </script>
+    </body>
+
+</html>
