@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Admin Login</title>
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="assets/styles.css" rel="stylesheet" media="screen">
+
+    <!--<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>-->
+  <script src="js/login.js"></script>
+  </head>
+  <body id="login">
+    <div class="container">
+
+      <!-- FORMULARIO DE DATOS DE INGRESO AL SISTEMA -->
+      <form class="form-signin" ACTION="php/login.php" method="POST">
+        <h2 class="form-signin-heading" align="center">Electivas</h2>
+        <div align="center">
+          <p>Ingrese con las credenciales del GESCO</p>
+        </div>
+        <input type="text" class="input-block-level" id="Usuario" placeholder="Usuario" required="required" name="usu"> 
+        <input type="password" class="input-block-level" id="Contra" placeholder="Contraseña" required="required" name="pass">
+        <!--
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Recordar contraseña
+        </label>
+        -->
+        <div align="right">
+          <button class="btn btn-large btn-primary" type="submit">Ingresar</button>
+        </div>
+      </form>
+
+    </div> <!-- /container -->
+    <script src="vendors/jquery-1.9.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
