@@ -14,6 +14,7 @@ function ActionCreate(){
   	var apellidoP_n	= 	document.getElementById("nuevoApellidoP").value;
 	var apellidoM_n	=	document.getElementById("nuevoApellidoM").value;
 
+    //en data coloco la acción, y nombreCampoDB:nombreVariableLocal
 	$.ajax({
 	  method:"POST",
 	  url: "php/alta_alumnos.php",
@@ -26,10 +27,11 @@ function ActionCreate(){
 		    {
 		    	var tabla=$('#example2').DataTable(); //cargo la tabla
 
+                //Creo los botones de actualizr y eliminar y les mando el id del registro para identificar el que se editará o eliminará
 		        Botones='<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalEditar" onclick="IdenticaActualizar('+resultJSON.id+');">Actualizar</button>';
 		        Botones=Botones+' <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalBorrar" onclick="IndentificaEliminar('+resultJSON.id+');">Eliminar</button></div>';
 
-		        //muestrp la tabla y agrego el registro nuevo
+		        //muestro la tabla y agrego el registro nuevo
 		  		tabla.row.add([
 	  			  programa_n, nombre_n, Botones
 	  				]).draw().node().id="row_"+resultJSON.id;
@@ -84,7 +86,7 @@ function ActionRead(){
 }
 
 
-//--------- UPDATE
+// FUNCION para ACTUALIZAR/EDITAR registros ---------------------------------------------------------------------------------------
 function ActionUpdate() {
 
   var id = obtenerID_e;
@@ -123,10 +125,10 @@ function ActionUpdate() {
 
 
 
-//--------- DELETE
+// FUNCION para ELIMINAR los registros -------------------------------------------------------------------------------------------
 function ActionDelete(){
 
-	IdElim=obtenerID_b;
+	IdElim=obtenerID_b; //Obtengo el ID del registro que eliminaré
 
 			$.ajax({
 				method:"post",
@@ -156,20 +158,10 @@ function ActionDelete(){
 }
 
 
-
-
-
-function IndentificaEliminar(id){
-
-  alert("Desea eliminar al registro con ID: "+id);
-	obtenerID_b=id;
-
-}
-
-
+// ----------- FUNCIONES PARA IDENTIFICAR LOS ID PARA ACTUALIZAR Y ELIMINAR -----------------------------------------
 
 function IdenticaActualizar(id){
-	obtenerID_e = id;
+	obtenerID_e = id; //Obtengo el ID del registro que actualizaré
 
 	//Referencia a la tabla
 	tabla		 = $("#example2").DataTable();
@@ -179,10 +171,14 @@ function IdenticaActualizar(id){
 
 	programa         = renglon[0];
   	nombre      	   = renglon[1];
-  //apellidoP        = renglon[2];
-  //apellidoM        = renglon[3];
 
 	$("#editaPrograma").val(programa);
 	$("#editaNombre").val(nombre);
+
+}
+function IndentificaEliminar(id){
+
+    alert("Desea eliminar al registro con ID: "+id);
+    obtenerID_b=id;
 
 }
