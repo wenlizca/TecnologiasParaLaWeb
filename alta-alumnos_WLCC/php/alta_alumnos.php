@@ -1,11 +1,12 @@
 <?php
 
-
-if(isset($_POST['accion'])){
+if(isset($_POST['accion']))
+{
 
 	include "conexion.php";
 
-	switch ($_POST['accion']) {
+	switch ($_POST['accion']) 
+    {
 		case 'read':
 			ActionReadPHP($conexion);
 			break;
@@ -20,18 +21,19 @@ if(isset($_POST['accion'])){
 			break;
 		default:
 			$Respuesta["estado"]=0;
-			$Respuesta["mensaje"]="Accion no valida";
+			$Respuesta["mensaje"]="La acción que desea no está disponible";
 			echo json_encode($Respuesta);
 			break;
 	}
 
 }else{
 	$Respuesta["estado"]=0;
-	$Respuesta["mensaje"]="Faltan Parametros";
+	$Respuesta["mensaje"]="No ha indicado la acción";
 	echo json_encode($Respuesta);
 }
 
-function ActionCreatePHP($conexion){
+function ActionCreatePHP($conexion)
+{
 
 	$nombre 		= $_POST['nombre'];
 	$programa 	= $_POST['programa'];
@@ -40,28 +42,28 @@ function ActionCreatePHP($conexion){
 
 	$Query = "INSERT INTO alumno (id, programa, nombre, apellidoP, apellidoM) VALUES (NULL, '".$programa."',  '".$nombre."', '".$apellidoP."', '".$apellidoM."')";
 
-	//Esta intrución crea el registro en la vase de datos
-	//Numero de filas (registros) adectados =1
+	//Numero de filas (registros) adectados = 1
 	$resultado = mysqli_query($conexion,$Query);
 
 	if($resultado>=1)
 	{
 		$respuesta['estado']	 = 1; //Para el programador
-		$respuesta['mensaje']	 = "El registro se creo con Exito";// para el alumno o persona encargada de las electuvas (usuarios)
+		$respuesta['mensaje']	 = "El registro se creo con Exito";// para el alumno o persona encargada de las electivas (usuarios)
 		$respuesta['id']	 	 = mysqli_insert_id($conexion); //Programador
 		echo json_encode($respuesta);
 	}
 	else
 	{
 		$respuesta['estado']	= 0;//Para el programador
-		$respuesta['mensaje']	= "Ocurrio un error desconocido";// para el alumno o persona encargada de las electuvas (usuarios)
+		$respuesta['mensaje']	= "ERROR";// para el alumno o persona encargada de las electivas (usuarios)
 		$respuesta['id']		= -1; //Programador
 		echo json_encode($respuesta);
 	}
 }
 
 
-function ActionReadPHP($conexion){
+function ActionReadPHP($conexion)
+{
 
 	$Query = "SELECT * FROM alumno";
 
@@ -81,20 +83,21 @@ function ActionReadPHP($conexion){
 		array_push($Respuesta["crud"], $Tipo_Evento);
 	}
 	$Respuesta["estado"]	=1;
-	$Respuesta["mensaje"]	="Consulta exitosa";
+	$Respuesta["mensaje"]	="Se han obtenido todos los datos correctamente para mostrar";
 
 	echo json_encode($Respuesta);
 }
 
 
 
-function ActionUpdatePHP($conexion){
+function ActionUpdatePHP($conexion)
+{
 
-  $Id  = $_POST['id'];
+    $Id  = $_POST['id'];
 	$nombre    = $_POST['nombre'];
 	$programa = $_POST['programa'];
-  $apellidoP 	= $_POST['apellidoP'];
-  $apellidoM 	= $_POST['apellidoM'];
+    $apellidoP 	= $_POST['apellidoP'];
+    $apellidoM 	= $_POST['apellidoM'];
 
 
     $Query ="UPDATE alumno SET  nombre='".$nombre."', apellidoP='".$apellidoP."', apellidoM='".$apellidoM."', programa='".$programa."' WHERE id=".$Id;
@@ -103,17 +106,18 @@ function ActionUpdatePHP($conexion){
 
 	if(mysqli_affected_rows($conexion)>0){
 		$Respuesta['estado']=1;
-		$Respuesta['mensaje']="Datos actualizados correctamente";
+		$Respuesta['mensaje']="El registro se actualizó correctamente";
 	}else{
 		$Respuesta['estado']=0;
-		$Respuesta['mensaje']="Ocurrrio un error desconocido";
+		$Respuesta['mensaje']="ERROR";
 	}
 	echo json_encode($Respuesta);
 
 }
 
 
-function ActionDeletePHP($conexion){
+function ActionDeletePHP($conexion)
+{
 
 	$Respuesta=array();
 
@@ -127,20 +131,18 @@ function ActionDeletePHP($conexion){
 
 		if(mysqli_affected_rows($conexion)>0){
 			$Respuesta["estado"]	=1;
-			$Respuesta["mensaje"]	="Se elimino correctamente";
+			$Respuesta["mensaje"]	="El registro se eliminó correctamente";
 
 		}else{
 			$Respuesta["estado"]	=0;
-			$Respuesta["mensaje"]	="Ocurrio un error desconocido";
+			$Respuesta["mensaje"]	="ERROR";
 		}
 	}else{
 		$Respuesta["estado"]	=0;
-		$Respuesta["mensaje"]	="Falta un id";
+		$Respuesta["mensaje"]	="No se ha detectado el ID";
 	}
 
 	echo json_encode($Respuesta);
 }
-
-
 
 ?>
